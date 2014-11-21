@@ -1,0 +1,53 @@
+% !TEX root = ../main.tex
+
+% Math mode classifications
+
+% Vector:
+\newcommand{\vt}[1]{\ensuremath{\underline{#1}}}
+
+% Matrix:
+\newcommand{\mt}[1]{\ensuremath{\underline{\underline{\mathbf{#1}}}}}
+
+% Set:
+\newcommand{\set}[1]{\ensuremath{\mathbb{#1}}}
+
+% PartialDifferential:
+\newcommand{\pder}[3][1]{\ensuremath{\frac{\partial#2}{\partial#3}}}
+
+% Sign function
+\newcommand{\sgn}[1]{\ensuremath{\text{sgn}\brac{#1}}}
+
+
+
+%%%%%%%%%%%%%%%%
+% TYPESETTING  %
+%%%%%%%%%%%%%%%%
+
+% Brackets ()
+\newcommand{\brac}[1]{\ensuremath{\left( #1 \right)}} 
+
+% Square brackets []
+\newcommand{\sbrac}[1]{\ensuremath{\left( #1 \right)}}
+
+% Bar brackets | | 
+\newcommand{\bbrac}[1]{\ensuremath{\left| #1 \right|}}
+
+
+% Text mode
+
+% Word shortcuts:
+\newcommand{\p}{pressure}
+
+\renewcommand{\bf}{\textbf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table environment     %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Left aligned math symbol
+\newcolumntype{L}{>{\begin{math}}l<{\end{math}}}%
+
+% Center aligned math symbol in table
+\newcolumntype{C}{>{\begin{math}}c<{\end{math}}}%
+
+% Right aligned math symbol in table
+\newcolumntype{R}{>{\begin{math}}r<{\end{math}}}%
